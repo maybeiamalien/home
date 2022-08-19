@@ -26,7 +26,7 @@
 	<div class="col-md-12">
 		<div id="top-bar">
 			<div class="navbar-header">
-				<i class="fa fa-navicon margin-right navbar-brand" onclick="drop()"></i>
+				<i class="fa fa-navicon margin-right navbar-brand" id="yoi"></i>
 				<a href="" class="navbar-brand navlink"> MayBe I Am Alien</a>
 			</div>
 		</div>
@@ -122,10 +122,12 @@
 </div>
 <script>
 
-function drop()
-{
-	document.getElementById("hoi").classList.remove("dis");
-}
+  
+$(document).ready(function(){
+  $("#yoi").click(function(){
+    $("#hoi").toggle();
+  });
+});
 	
 </script>
 </body>
